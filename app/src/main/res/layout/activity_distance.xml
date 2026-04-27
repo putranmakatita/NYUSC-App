@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Map View Container -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/ScientificCard"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="16dp">
+                <org.osmdroid.views.MapView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/ic_menu_mylocation"
+                    app:tint="@color/accent_blue" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSetPoint1"
+                    style="@style/ScientificButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Set P1"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="12sp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSetPoint2"
+                    style="@style/ScientificButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Set P2"
+                    android:layout_marginStart="8dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ScientificInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Latitude 1">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lat1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:inputType="numberDecimal|numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ScientificInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Longitude 1">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lon1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:inputType="numberDecimal|numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ScientificInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Latitude 2">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:inputType="numberDecimal|numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ScientificInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Longitude 2">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lon2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:inputType="numberDecimal|numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCalculate"
+                style="@style/ScientificButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Compute Haversine"
+                android:layout_marginTop="24dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/ScientificCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Geodesic Distance"
+                        android:textColor="@color/accent_blue"
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:letterSpacing="0.1"/>
+                    <TextView
+                        android:id="@+id/textResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:textColor="@color/text_primary"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not Your Usual Scientific Calculator by Putra N. Makatita"
+        android:textColor="@color/text_secondary"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.05"/>
+
+</LinearLayout>

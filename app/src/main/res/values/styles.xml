@@ -1,0 +1,35 @@
+<resources>
+    <!-- Scientific Card Style - Now with Borders -->
+    <style name="ScientificCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/card_dark</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">#1E3A5F</item> <!-- Subtle border -->
+        <item name="strokeWidth">1dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Scientific Button Style -->
+    <style name="ScientificButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/accent_blue</item>
+        <item name="android:textColor">@color/bg_dark</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <!-- Scientific Input Style -->
+    <style name="ScientificInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/accent_blue</item>
+        <item name="boxStrokeWidth">1.5dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="hintTextColor">@color/accent_blue</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+    </style>
+</resources>

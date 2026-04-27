@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ScientificInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Chemical Formula (e.g., H2O)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputFormula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:inputType="textNoSuggestions"
+                    android:fontFamily="monospace"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCalculate"
+                style="@style/ScientificButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Execute Calculation"
+                android:layout_marginTop="24dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/ScientificCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Computed Result"
+                        android:textColor="@color/accent_blue"
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:letterSpacing="0.1"/>
+                    <TextView
+                        android:id="@+id/textResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:textColor="@color/text_primary"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not Your Usual Scientific Calculator by Putra N. Makatita"
+        android:textColor="@color/text_secondary"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.05"/>
+
+</LinearLayout>

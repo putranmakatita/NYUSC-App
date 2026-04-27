@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Scientific Dark Theme -->
+    <color name="bg_dark">#0A192F</color> <!-- Deep Space Blue -->
+    <color name="card_dark">#112240</color>
+    <color name="accent_blue">#64FFDA</color> <!-- Cyan/Teal accent -->
+    <color name="accent_purple">#B39DDB</color>
+    <color name="accent_green">#81C784</color>
+    <color name="text_primary">#CCD6F6</color>
+    <color name="text_secondary">#8892B0</color>
+
+    <color name="splash_bg">#0A192F</color>
+</resources>

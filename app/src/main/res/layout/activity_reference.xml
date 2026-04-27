@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scientific Knowledge Base"
+                android:textColor="@color/accent_blue"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHaversine"
+                style="@style/ScientificButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Haversine Formula"
+                android:layout_marginBottom="12dp"
+                android:textAllCaps="false"
+                android:gravity="start|center_vertical"
+                android:paddingStart="20dp"
+                app:icon="@android:drawable/ic_menu_mylocation"
+                app:backgroundTint="@color/card_dark"
+                android:textColor="@color/text_primary"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCombination"
+                style="@style/ScientificButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Combination Theory"
+                android:layout_marginBottom="12dp"
+                android:textAllCaps="false"
+                android:gravity="start|center_vertical"
+                android:paddingStart="20dp"
+                app:icon="@android:drawable/btn_star"
+                app:backgroundTint="@color/card_dark"
+                android:textColor="@color/text_primary"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPermutation"
+                style="@style/ScientificButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Permutation Theory"
+                android:layout_marginBottom="12dp"
+                android:textAllCaps="false"
+                android:gravity="start|center_vertical"
+                android:paddingStart="20dp"
+                app:icon="@android:drawable/btn_star"
+                app:backgroundTint="@color/card_dark"
+                android:textColor="@color/text_primary"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDerivative"
+                style="@style/ScientificButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Calculus Fundamentals"
+                android:layout_marginBottom="12dp"
+                android:textAllCaps="false"
+                android:gravity="start|center_vertical"
+                android:paddingStart="20dp"
+                app:icon="@android:drawable/ic_menu_compass"
+                app:backgroundTint="@color/card_dark"
+                android:textColor="@color/text_primary"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not Your Usual Scientific Calculator by Putra N. Makatita"
+        android:textColor="@color/text_secondary"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.05"/>
+
+</LinearLayout>

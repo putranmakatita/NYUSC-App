@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="18"
+        android:translateY="18">
+        <!-- Scale the 24x24 atom to fit 72x72 area (3x scale) -->
+        <group android:scaleX="3" android:scaleY="3">
+            <path
+                android:fillColor="@color/accent_blue"
+                android:pathData="M12,12m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+            <path
+                android:strokeColor="@color/accent_blue"
+                android:strokeWidth="0.8"
+                android:pathData="M12,12m-9,0a9,4 0,1 1,18 0a9,4 0,1 1,-18 0" />
+            <path
+                android:strokeColor="@color/accent_blue"
+                android:strokeWidth="0.8"
+                android:pathData="M12,12m-9,0a9,4 0,1 1,18 0a9,4 0,1 1,-18 0"
+                android:rotation="60" />
+            <path
+                android:strokeColor="@color/accent_blue"
+                android:strokeWidth="0.8"
+                android:pathData="M12,12m-9,0a9,4 0,1 1,18 0a9,4 0,1 1,-18 0"
+                android:rotation="120" />
+        </group>
+    </group>
+</vector>

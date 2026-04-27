@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_bg">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_atom" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="NYUSC"
+        android:textColor="@color/accent_blue"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Not Your Usual Scientific Calculator"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.05"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="by Putra N. Makatita"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.1"/>
+
+</RelativeLayout>
