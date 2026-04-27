@@ -1,4 +1,3 @@
-# 📱 LAPORAN PROGRAM  
 ## Not Your Usual Scientific Calculator (NYUSC)
 
 ---
@@ -134,10 +133,3 @@ Aplikasi NYUSC berhasil dibuat sebagai solusi alternatif kalkulator ilmiah denga
 2. Integrasi API untuk data ilmiah  
 3. Menambahkan fitur penyimpanan hasil perhitungan  
 4. Mengembangkan UI yang lebih interaktif  
-
----
-
-## 11. Repository
-Sumber kode dapat diakses melalui repository GitHub:
-
-👉 (masukkan link repo kamu di sini)
